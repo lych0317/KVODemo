@@ -7,23 +7,28 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
-
-@end
+#import "Person+Age.h"
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    Person *p = [[Person alloc] init];
+    
+    [p addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:nil];
+    [p addObserver:self forKeyPath:@"age" options:NSKeyValueObservingOptionNew context:nil];
+    
+    p.name = @"leo";
+    p.age = 28;
+    
+    NSLog(@"name : %@, age : %@", p.name, @(p.age));
+    
+    [p removeObserver:self forKeyPath:@"name" context:nil];
+    [p removeObserver:self forKeyPath:@"age" context:nil];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    NSLog(@"keyPath : %@, object : %@, change : %@", keyPath, object, change);
 }
-
 
 @end

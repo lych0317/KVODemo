@@ -13,6 +13,8 @@
 		484B33221E7A3D2900DF789E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484B33201E7A3D2900DF789E /* Main.storyboard */; };
 		484B33241E7A3D2900DF789E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484B33231E7A3D2900DF789E /* Assets.xcassets */; };
 		484B33271E7A3D2900DF789E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484B33251E7A3D2900DF789E /* LaunchScreen.storyboard */; };
+		484B33301E7A3F2100DF789E /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 484B332F1E7A3F2100DF789E /* Person.m */; };
+		484B33331E7A406600DF789E /* Person+Age.m in Sources */ = {isa = PBXBuildFile; fileRef = 484B33321E7A406600DF789E /* Person+Age.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		484B33231E7A3D2900DF789E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		484B33261E7A3D2900DF789E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		484B33281E7A3D2900DF789E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		484B332E1E7A3F2100DF789E /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		484B332F1E7A3F2100DF789E /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		484B33311E7A406600DF789E /* Person+Age.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+Age.h"; sourceTree = "<group>"; };
+		484B33321E7A406600DF789E /* Person+Age.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+Age.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,10 @@
 				484B331B1E7A3D2900DF789E /* AppDelegate.m */,
 				484B331D1E7A3D2900DF789E /* ViewController.h */,
 				484B331E1E7A3D2900DF789E /* ViewController.m */,
+				484B332E1E7A3F2100DF789E /* Person.h */,
+				484B332F1E7A3F2100DF789E /* Person.m */,
+				484B33311E7A406600DF789E /* Person+Age.h */,
+				484B33321E7A406600DF789E /* Person+Age.m */,
 				484B33201E7A3D2900DF789E /* Main.storyboard */,
 				484B33231E7A3D2900DF789E /* Assets.xcassets */,
 				484B33251E7A3D2900DF789E /* LaunchScreen.storyboard */,
@@ -152,7 +162,9 @@
 			files = (
 				484B331F1E7A3D2900DF789E /* ViewController.m in Sources */,
 				484B331C1E7A3D2900DF789E /* AppDelegate.m in Sources */,
+				484B33301E7A3F2100DF789E /* Person.m in Sources */,
 				484B33191E7A3D2900DF789E /* main.m in Sources */,
+				484B33331E7A406600DF789E /* Person+Age.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
