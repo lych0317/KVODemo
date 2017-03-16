@@ -1,4 +1,7 @@
 # KVODemo
+
+http://www.jianshu.com/p/36ebbd16aa24
+
 KVO学习
 
 基本上中级别以上的面试都会问到KVO的实现原理。
